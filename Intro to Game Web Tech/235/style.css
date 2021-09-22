@@ -16,13 +16,19 @@ img{
     border:1px solid #E3170A;
 }
 
-h2{
+#projects{
     max-width: 800px;
     color:#3626A7;
     border-bottom:1px solid #E3170A;
 }
 
-p{
+#repo{
+    max-width: 800px;
+    color:#3626A7;
+    border-bottom:1px solid #E3170A;
+}
+
+p.bio{
     max-width:700px;
     margin-left: 2rem;
     margin-right: auto;
@@ -35,10 +41,34 @@ h3{
     border-bottom:1px solid #3626A7;
 }
 
-section>a{
+a.link{
     margin-left:4rem;
 }
 
 a{
     margin-left:2rem;
+    max-width:fit-content;
+}
+
+a:link{
+    color:#E3170A;
+}
+
+a:visited{
+    color:#E89005;
+}
+
+a:focus{
+    color:#E3170A;
+    background-color: #E89005;
+}
+
+a:hover{
+    color:#E3170A;
+    background-color: #E89005;
+}
+
+a:active{
+    color:coral;
+    background-color: #E89005;
 }
