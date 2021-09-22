@@ -1,0 +1,31 @@
+/* Do everything in this file */
+h2{
+    border-bottom: 1px solid red;
+    clear: both;
+}
+
+figure{
+    float: right;
+    width: 40%;
+}
+
+figure>img{
+    width: 40vw;
+    margin-left: 1rem;
+}
+
+div.tet{
+    float: left;
+    width: 40%;
+    border: 1px solid pink;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer{
+    clear: both;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
