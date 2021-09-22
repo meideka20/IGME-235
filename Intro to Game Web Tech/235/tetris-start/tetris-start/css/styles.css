@@ -1,0 +1,47 @@
+/* Do everything in this file */
+figure{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure>img{
+    width:100%;
+}
+
+header main footer{
+    width:90vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section{
+    display:flex;
+    flex-flow:row;
+    flex-wrap:wrap;
+}
+
+div.tet{
+    flex: 0 1 300px;
+    border: 1px solid black;
+}
+
+div.aliases{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1rem;
+    width:60%;
+}
+
+div>img{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+span{
+    display:block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
