@@ -1,0 +1,146 @@
+header{
+    display:flex;
+    background-color: #6FA3EB;
+    align-items: center;
+}
+
+h1{
+    padding:1rem;
+}
+
+a{
+    margin-left:auto;
+}
+
+#con{
+    margin-right:5%;
+    margin-left:auto;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: #B3F2DD;
+}
+
+h1{
+    margin-left:10%;
+}
+
+#about{
+    display:flex;
+    flex-direction: column;
+    border-style:solid;
+    border-color: #9E8CCF;
+    margin-left:10%;
+    margin-right:10%;
+    padding:1rem;
+}
+
+@media screen and (min-width:850px)
+{
+    #about{
+    display:grid;
+    grid-template-columns: 10% 35% 5% 35% 10%;
+    grid-template-areas: "space tagline midspace picture rightspace"
+                         "space text midspace picture rightspace";
+    max-height:fit-content;
+    border-style:solid;
+    border-color: #9E8CCF;
+    margin-left:10%;
+    margin-right:10%;
+    }
+}
+
+#about img{
+    grid-area: picture;
+    padding:1rem;
+    max-width:35vw;
+}
+
+#about h2{
+    grid-area:tagline;
+}
+
+#about p{
+    grid-area:text;
+}
+
+@media screen and (max-width:850px)
+{#gallery{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:10%;
+    margin-right:10%;
+}
+}
+
+@media screen and (min-width:850px)
+{#gallery{
+    display:grid;
+    grid-template-columns:10% 35% 5% 35% 10%;
+    grid-template-areas:"space lfaw midspace place1 rightspace"
+                        "space place2 midspace place3 rightspace";
+    }
+    
+}
+
+.lfaw{
+    grid-area:lfaw;
+    border-style:solid;
+    padding:1rem;
+    min-width:33vw;
+    margin-bottom:1rem;
+    border-color: #9E8CCF;
+}
+
+.place1{
+    grid-area:place1;
+    border-style:solid;
+    padding:1rem;
+    min-width:33vw;
+    margin-bottom:1rem;
+    border-color: #9E8CCF;
+}
+
+.place2{
+    grid-area:place2;
+    border-style:solid;
+    padding:1rem;
+    min-width:33vw;
+    margin-bottom:1rem;
+    border-color: #9E8CCF;
+}
+
+.place3{
+    grid-area:place3;
+    border-style:solid;
+    padding:1rem;
+    min-width:33vw;
+    margin-bottom:1rem;
+    border-color: #9E8CCF;
+}
+
+#gallery img{
+    max-width:33vw;
+}
+
+footer{
+    display:flex;
+    background-color: #F25476;
+    height:50px;
+    padding:1rem;
+}
+
+footer h2{
+    margin-left:10%;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+#contact{
+    margin-left:10%;
+    margin-top:auto;
+    margin-bottom: auto;
+}

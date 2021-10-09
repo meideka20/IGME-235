@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'retro_computerregular';
+    src: url('retro_computer_personal_use-webfont.woff2') format('woff2'),
+         url('retro_computer_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dogicabold';
+    src: url('dogicabold-webfont.woff2') format('woff2'),
+         url('dogicabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dogica_pixelregular';
+    src: url('dogicapixel-webfont.woff2') format('woff2'),
+         url('dogicapixel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dogica_pixelbold';
+    src: url('dogicapixelbold-webfont.woff2') format('woff2'),
+         url('dogicapixelbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header{
+    display:flex;
+    flex-direction:row;
+    background-color: #686868;
+    font-family: "retro_computerregular";
+    max-height: fit-content;
+}
+
+header>img{
+    max-height: 50px;
+    stroke:white;
+    margin-left:1rem;
+    margin-top:auto;
+    margin-bottom:auto;
+    filter:invert();
+}
+
+header>h1{
+    color: white;
+    padding-left: 10%;
+}
+
+header>h4{
+    color:white;
+    text-align:right;
+    margin-left:auto;
+    padding-right:10%;
+}
+
+body{
+    display: flex;
+    flex-flow:column;
+    max-width: 100%;
+    background-color: #35363D;
+}
+
+#tree{
+    display: grid;
+    grid-template-rows: 675px;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: "spaceLeft info picture spaceRight";
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+section#treeText{
+    grid-area: info;
+    background-color: #686868;
+    font-family: "dogica_pixelregular";
+    font-size:108%;
+    padding: 1rem;
+    padding-right:2rem;
+    padding-left:2rem;
+    color: white;
+    margin-right:1rem;
+    margin-left:auto;
+    max-height: 631px;
+}
+
+#tree>h2{
+    font-family: "retro_computerregular";
+}
+
+img#treeImage{
+    grid-area: picture;
+    max-width: 35vw;
+    background-image: linear-gradient(to bottom right, #e8fdf5, #244d3e);
+    border-color: white;
+    border-width:4px;
+    border-style: solid;
+    padding: 2rem;
+}
+
+#valley>img{
+    width:100%;
+    height:700px;
+    object-fit: cover;
+}
+
+#crafting{
+    display:grid;
+    max-height:600px;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "leftSpace plankImage plankText stickImage stickText rightSpace"
+                         "leftSpace chestImage chestText stairImage stairText rightSpace";
+}
+
+#crafting>blockquote{
+    background-color: #686868;
+    font-family: "dogica_pixelregular";
+    color:white;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1rem;
+    font-size:90%;
+}
+
+#crafting>div{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    font-family:"retro_computerregular";
+    text-align: center;
+}
+
+.planks{
+    grid-area: plankImage;
+    background-color: #324e44;
+    border-style:solid;
+    border-width:4px;
+    border-color:white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+#plankImg{
+    max-width:50%;
+
+}
+
+#planks{
+    grid-area: plankText;
+}
+
+.stick{
+    grid-area: stickImage;
+    background-color: #324e44;
+    border-style:solid;
+    border-width:4px;
+    border-color:white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+#stickImg{
+    max-width:50%;
+}
+
+#stick{
+    grid-area: stickText;
+}
+
+.chest{
+    grid-area: chestImage;
+    background-color: #324e44;
+    border-style:solid;
+    border-width:4px;
+    border-color:white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+#chestImg{
+    max-width:50%;
+}
+
+#chest{
+    grid-area: chestText;
+}
+
+.stairs{
+    grid-area: stairImage;
+    background-color: #324e44;
+    border-style:solid;
+    border-width:4px;
+    border-color:white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+#stairsImg{
+    max-width:50%;
+}
+
+#stairs{
+    grid-area:stairText;
+}
+
+footer{
+    background-image: url(/images/trees.jpg);
+    display:flex;
+    flex-flow:row;
+    color:white;
+    font-family:"retro_computerregular";
+}
+
+#question{
+    margin-left:10%;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#copyright{
+    margin-left:auto;
+    text-align:right;
+    margin-right:10%;
+}
