@@ -8,7 +8,24 @@ h1{
     padding:1rem;
 }
 
-a{
+ul{
+    display:flex;
+    list-style-type: none;
+    margin-right:10%;
+    margin-left:auto;
+}
+
+li>a{
+    text-decoration: none;
+}
+
+#ab{
+    margin-right:1rem;
+    margin-left:auto;
+}
+
+#gal{
+    margin-right:1rem;
     margin-left:auto;
 }
 
@@ -21,6 +38,9 @@ body{
     display:flex;
     flex-direction: column;
     background-color: #B3F2DD;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
 }
 
 h1{
@@ -41,21 +61,29 @@ h1{
 {
     #about{
     display:grid;
-    grid-template-columns: 10% 35% 5% 35% 10%;
-    grid-template-areas: "space tagline midspace picture rightspace"
-                         "space text midspace picture rightspace";
+    grid-template-columns: 50% 5% 45%;
+    grid-template-areas: "tagline midspace picture"
+                         "text midspace picture";
     max-height:fit-content;
     border-style:solid;
     border-color: #9E8CCF;
     margin-left:10%;
     margin-right:10%;
+    text-align: right;
     }
 }
 
 #about img{
     grid-area: picture;
     padding:1rem;
-    max-width:35vw;
+    max-width:32vw;
+}
+
+@media screen and (max-width:850px)
+{
+    #about img{
+        max-width: 70vw;
+    }
 }
 
 #about h2{
@@ -79,11 +107,16 @@ h1{
 @media screen and (min-width:850px)
 {#gallery{
     display:grid;
-    grid-template-columns:10% 35% 5% 35% 10%;
+    grid-template-columns:10% 35% 10% 35% 10%;
     grid-template-areas:"space lfaw midspace place1 rightspace"
                         "space place2 midspace place3 rightspace";
     }
     
+}
+
+#gallery div{
+    display: flex;
+    flex-direction: column;
 }
 
 .lfaw{
@@ -124,6 +157,13 @@ h1{
 
 #gallery img{
     max-width:33vw;
+}
+
+@media screen and (max-width:850px)
+{
+    #gallery img{
+        max-width: 70vw;
+    }
 }
 
 footer{
