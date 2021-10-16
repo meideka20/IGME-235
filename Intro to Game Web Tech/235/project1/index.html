@@ -9,40 +9,40 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<header>
-    <h1>Karl Meidenbauer's Portfolio</h1>
-    <ul>
-        <li><a id="ab" href=#about>About</a></li>
-        <li><a id="gal" href=#gallery>Gallery</a></li>
-        <li><a id="con" href=#contact>Contact</a></li>
-    </ul>
-</header>
-
 <body>
-    <h1>About Me</h1>
+    <header>
+        <a href=#about>About</a>
+        <a href=#gallery>Gallery</a>
+        <a href=#contact>Contact</a>
+    </header>
+
     <section id="about">
         <img src="images/MeInSuit.jpeg" alt="Karl Meidenbauer image">
-        <h2>Aspiring Game Developer Seeking Experience</h2>
-        <p>
-            Hi! My name is Karl Meidenbauer and I'm a second-year Game Design and Development Major at the Rochester
-            Institute of Technology. I enjoy figuring out the puzzle that is coding a new mechanic into a game. If I'm
-            not at my computer coding, I'm probably either playing video games or playing volleyball.
-        </p>
+        <div class="text">
+            <h1>Karl Meidenbauer</h1>
+            <h2>Aspiring Game Developer Seeking Experience</h2>
+            <p>
+                Hi! My name is Karl Meidenbauer and I'm a second-year Game Design and Development Major at the Rochester
+                Institute of Technology. I enjoy figuring out the puzzle that is coding a new mechanic into a game. I've
+                made projects in Monogame with C#, and I'm currently learning Unity and Unreal. If I'm
+                not at my computer coding, I'm probably either playing video games or playing volleyball.
+            </p>
+        </div>
     </section>
 
-    <h1>Gallery</h1>
     <section id="gallery">
-        <div class="lfaw">
+        <h1>Gallery</h1>
+        <div>
             <h2>Life Finds A Way</h2>
-            <img src="images/banner.png" alt="life finds a way image">
+            <a href="https://cajunwildcat.itch.io/life-finds-a-way"><img src="images/banner.png"
+                    alt="life finds a way image"></a>
             <p>
                 This is Life Finds a Way, a challenging 2D platformer inspired by Celeste made in Monogame with C#. I
                 was the lead level designer and also designed all of the player movement.
             </p>
-            <a href="https://cajunwildcat.itch.io/life-finds-a-way">Play the game here!</a>
         </div>
 
-        <div class="place1">
+        <div>
             <h2>Placeholder 1</h2>
             <img src="images/GameDev.jpg" alt="gamer behind monitor">
             <p>
@@ -51,7 +51,7 @@
             </p>
         </div>
 
-        <div class="place2">
+        <div>
             <h2>Placeholder 2</h2>
             <img src="images/GameDev.jpg" alt="gamer behind monitor but again">
             <p>
@@ -60,7 +60,7 @@
             </p>
         </div>
 
-        <div class="place3">
+        <div>
             <h2>Placeholder 3</h2>
             <img src="images/GameDev.jpg" alt="gamer behind monitor but again(again)">
             <p>
@@ -69,16 +69,20 @@
             </p>
         </div>
     </section>
-</body>
 
-<footer>
-    <h2>Contact Me</h2>
-    <section id="contact">
-        <a href="https://www.linkedin.com/in/karl-meidenbauer-874b80190/">Find me on LinkedIn</a>
-        <a href="https://beep-boop125.itch.io/">Find me on Itch.io</a>
-        <a href="mailto:kfm5870@rit.edu">Email me at kfm5870@rit.edu</a>
-        <a href="images/FinalResumeDraft.pdf">Here's my Resume</a>
-    </section>
-</footer>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <a href="https://www.linkedin.com/in/karl-meidenbauer-874b80190/"><img
+                    src="https://img.icons8.com/small/64/000000/linkedin.png" alt="LinkedInLogo"></a>
+            <a href="https://beep-boop125.itch.io/"><img
+                    src="https://img.icons8.com/ios-glyphs/60/000000/itch-io.png" alt="itch.ioLogo"></a>
+            <a href="mailto:kfm5870@rit.edu"><img
+                    src="https://img.icons8.com/ios-filled/100/000000/gmail-new.png" alt="gmailLogo"></a>
+            <a href="images/FinalResumeDraft.pdf"><img
+                    src="https://img.icons8.com/ios-glyphs/60/000000/resume.png" alt="resumeLogo"></a>
+        </section>
+    </footer>
+</body>
 
 </html>

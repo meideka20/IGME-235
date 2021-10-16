@@ -1,186 +1,175 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@700&display=swap');
+
+/*Making things the fonts I want*/
+h1{
+    font-family: "Teko";
+    font-size:xx-large;
+}
+
+h2{
+    font-family: "Teko";
+}
+
+p{
+    font-family: "Open Sans";
+}
+
+/*This is all of the header things*/
 header{
     display:flex;
+    flex-direction: row;
     background-color: #6FA3EB;
-    align-items: center;
+    position:fixed;
+    top:0px;
+    width:100%;
 }
 
-h1{
-    padding:1rem;
-}
-
-ul{
-    display:flex;
-    list-style-type: none;
-    margin-right:10%;
-    margin-left:auto;
-}
-
-li>a{
+header a{
+    display:block;
     text-decoration: none;
+    padding:1rem;
+    width:33%;
+    text-align:center;
+    color: #6449AF;
+    font-family: "Teko";
+    font-size:larger;
 }
 
-#ab{
-    margin-right:1rem;
-    margin-left:auto;
+header a:hover{
+    background-color:#1857AE;
+    color: white;
 }
 
-#gal{
-    margin-right:1rem;
-    margin-left:auto;
-}
-
-#con{
-    margin-right:5%;
-    margin-left:auto;
-}
-
+/*This is all of the body things*/
 body{
     display:flex;
     flex-direction: column;
     background-color: #B3F2DD;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:auto;
+    margin:0px;
 }
 
-h1{
-    margin-left:10%;
-}
-
+/*This is the about section*/
 #about{
     display:flex;
-    flex-direction: column;
-    border-style:solid;
+    flex-flow:row nowrap;
+    word-wrap: normal;
+    border-style:none none solid none;
     border-color: #9E8CCF;
     margin-left:10%;
     margin-right:10%;
+    margin-top:50px;
+    align-items: center;
     padding:1rem;
-}
-
-@media screen and (min-width:850px)
-{
-    #about{
-    display:grid;
-    grid-template-columns: 50% 5% 45%;
-    grid-template-areas: "tagline midspace picture"
-                         "text midspace picture";
-    max-height:fit-content;
-    border-style:solid;
-    border-color: #9E8CCF;
-    margin-left:10%;
-    margin-right:10%;
-    text-align: right;
-    }
 }
 
 #about img{
-    grid-area: picture;
-    padding:1rem;
-    max-width:32vw;
+    max-width:25vw;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-@media screen and (max-width:850px)
-{
+#about .text{
+    text-align:left;
+    flex-flow: column nowrap;
+    text-align: center;
+    width:40vw;
+}
+
+@media screen and (max-width:850px){
+    #about{
+        flex-flow:column;
+        margin-left:5%;
+        margin-right:5%;
+        align-items: center;
+        padding:1rem;
+    }
+
     #about img{
-        max-width: 70vw;
+        max-width:50vw;
+    }
+
+    #about .text{
+        width:80vw;
     }
 }
 
-#about h2{
-    grid-area:tagline;
-}
-
-#about p{
-    grid-area:text;
-}
-
-@media screen and (max-width:850px)
-{#gallery{
+/*This is the works gallery section*/
+#gallery{
     display:flex;
-    flex-direction: column;
+    flex-flow:row wrap;
     align-items: center;
     margin-left:10%;
     margin-right:10%;
-}
+    text-align: center;
 }
 
-@media screen and (min-width:850px)
-{#gallery{
-    display:grid;
-    grid-template-columns:10% 35% 10% 35% 10%;
-    grid-template-areas:"space lfaw midspace place1 rightspace"
-                        "space place2 midspace place3 rightspace";
-    }
-    
+#gallery h1{
+    width:100%;
 }
 
 #gallery div{
-    display: flex;
+    display:flex;
     flex-direction: column;
-}
-
-.lfaw{
-    grid-area:lfaw;
-    border-style:solid;
-    padding:1rem;
-    min-width:33vw;
-    margin-bottom:1rem;
-    border-color: #9E8CCF;
-}
-
-.place1{
-    grid-area:place1;
-    border-style:solid;
-    padding:1rem;
-    min-width:33vw;
-    margin-bottom:1rem;
-    border-color: #9E8CCF;
-}
-
-.place2{
-    grid-area:place2;
-    border-style:solid;
-    padding:1rem;
-    min-width:33vw;
-    margin-bottom:1rem;
-    border-color: #9E8CCF;
-}
-
-.place3{
-    grid-area:place3;
-    border-style:solid;
-    padding:1rem;
-    min-width:33vw;
+    align-items: center;
+    border-style:none;
+    width:50%;
+    height:35vw;
     margin-bottom:1rem;
     border-color: #9E8CCF;
 }
 
 #gallery img{
+    max-width:35vw;
+}
+
+#gallery p{
     max-width:33vw;
 }
 
 @media screen and (max-width:850px)
 {
+    #gallery{
+        display:flex;
+        flex-flow:column;
+        align-items: center;
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    #gallery div{
+        border-style:none none solid none;
+        width:100%;
+        margin-bottom:1rem;
+        border-color: #9E8CCF;
+        height:fit-content;
+    }
+
     #gallery img{
+        max-width: 70vw;
+    }
+
+    #gallery p{
         max-width: 70vw;
     }
 }
 
+/*This is the footer with the contact info*/
 footer{
     display:flex;
-    background-color: #F25476;
-    height:50px;
+    flex-direction: column;
+    background-color: #6FA3EB;
+    height:fit-content;
     padding:1rem;
+    align-items: center;
+    text-align: center;
+    bottom:0px;
 }
 
-footer h2{
-    margin-left:10%;
-    margin-top:auto;
-    margin-bottom: auto;
+footer img{
+    width: 50px;
 }
 
-#contact{
-    margin-left:10%;
-    margin-top:auto;
-    margin-bottom: auto;
+footer img:hover{
+    background-color: #1857AE;
 }
