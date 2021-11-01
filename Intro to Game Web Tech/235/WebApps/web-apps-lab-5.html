@@ -52,8 +52,8 @@
                     color = buttons[i].value;
                 }
             }
-            document.getElementById("info").innerHTML = "Your FINAL CHOICE is " + buttons;
-            document.querySelector("legend").target.style.color = color;
+            document.getElementById("info").innerHTML = "Your FINAL CHOICE is \"" + color + "\"!";
+            document.querySelector("legend").style.color = color;
         }
 
         let buttons = document.querySelectorAll("input[name='colorGroup']");

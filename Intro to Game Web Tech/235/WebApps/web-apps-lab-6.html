@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Web Apps-4-HW</title>
+	<title>Web Apps-6</title>
 	<style>
 		body{border:1px solid gray;}
 	</style>
@@ -53,6 +53,20 @@ for(let i = 0; i<foods.length; i++)
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(foods[i]));
     var list = document.querySelector("ol:nth-of-type(2)");
+    list.append(li);
+}
+
+let keys = Object.keys(links);
+let values = Object.values(links);
+
+for(let i = 0; i<keys.length; i++)
+{
+	var a = document.createElement("a");
+	a.appendChild(document.createTextNode(keys[i]));
+	a.href = values[i];
+	var li = document.createElement("li");
+	li.appendChild(a);
+	var list = document.querySelector("ol:nth-of-type(3)");
     list.append(li);
 }
 

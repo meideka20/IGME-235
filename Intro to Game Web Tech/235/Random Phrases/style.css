@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Architects Daughter';
+    margin-left:10%;
+    margin-right:10%;
+    background-color:#0746ee;
+}
+
+img{
+    border-style: solid;
+    border-width: 4px;
+    border-radius:25px;
+}
+
+#stuff{
+    position:fixed;
+    padding:1rem;
+}
+
+button{
+    font-family: 'Architects Daughter';
+    background-color:white;
+    border-radius:25px;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: blanchedalmond;
+}
+
+button:active{
+    background-color:burlywood;
+}
+
+#quoteBox{
+    background-color: black;
+    opacity:1;
+    border-radius: 25px;
+    max-width: 320px;
+    max-height: fit-content;
+}
+
+p{
+    opacity:1.0;
+    color:white;
+    padding:1rem;
+    text-align: center;
+}
