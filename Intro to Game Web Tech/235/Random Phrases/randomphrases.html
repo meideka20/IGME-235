@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>What would Link say?</title>
+</head>
+
+<body>
+    <img src="skywardSwordImage.jpg" alt="skyward sword image">
+    <div id="stuff">
+        <header>
+            <h1>What would Link say?????</h1>
+        </header>
+        <div id="quoteBox">
+            <p>HYAHHHHHHHHHH</p>
+        </div>
+        <button>What would Link say?</button>
+        <footer>
+            <h3>Karl Meidenbauer 2021</h3>
+        </footer>
+    </div>
+</body>
+
+<script>
+    let phrases = ["HYAAHHHHHHHH!!!!", "HYUH!!", "HUP!", "HA!", "DAAAAAAAA!!!!!!!!", "NGHHH!"]
+    function displayQuote()
+    {
+        document.querySelector("p").innerHTML = phrases[Math.floor(Math.random() * phrases.length)];
+    }
+    document.querySelector("button").onclick = displayQuote;
+</script>
+
+</html>
