@@ -21,6 +21,33 @@ h1{
     margin-left:1rem;
 }
 
+h4{
+    position:fixed;
+    width:20%;
+    margin-left:2.5rem;
+    margin-top:40rem;
+}
+
+.documentation{
+    color:#4aba91;
+}
+
+.documentation:link{
+    color:#4aba91;
+}
+
+.documentation:visited{
+    color:#d4ce46;
+}
+
+.documentation:hover{
+    color:#0d9263;
+}
+
+.documentation:active{
+    color:#0d9263;
+}
+
 #filters{
     display:flex;
     flex-direction: column;
