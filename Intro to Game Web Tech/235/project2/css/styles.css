@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    font-family: 'Architects Daughter';
+}
+
+body{
+    display:grid;
+    grid-template-areas: "title table"
+                        "filters table";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    background-color: 	#0e5135;
+}
+
+h1{
+    grid-area:title;
+    position:fixed;
+    width:20%;
+    color:#d4ce46;
+    margin-left:1rem;
+}
+
+h4{
+    position:fixed;
+    width:20%;
+    margin-left:2.5rem;
+    margin-top:40rem;
+}
+
+.documentation{
+    color:#4aba91;
+}
+
+.documentation:link{
+    color:#4aba91;
+}
+
+.documentation:visited{
+    color:#d4ce46;
+}
+
+.documentation:hover{
+    color:#0d9263;
+}
+
+.documentation:active{
+    color:#0d9263;
+}
+
+#filters{
+    display:flex;
+    flex-direction: column;
+    grid-area:filters;
+    position:fixed;
+    border: 1px solid;
+    padding:1rem;
+    width:15%;
+    margin-top:10rem;
+    border: 1px solid #494b4b;
+    background-color:#4aba91;
+    margin-left:1rem;
+    border-radius:25px;
+}
+
+.myInput {
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+  
+#myTable {
+    grid-area:table;
+    margin-right:0px;
+    margin-left:auto;
+    border-collapse: collapse;
+    border: 1px solid #494b4b;
+    font-size: 18px;
+    width:100%;
+}
+  
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+  
+#myTable tr {
+    border-bottom: 1px solid #494b4b;
+    background-color: 	#4aba91;
+}
+  
+#myTable tr.header, #myTable tr:hover {
+    background-color: 	#0d9263;
+}

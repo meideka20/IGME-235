@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Hyrule Compendium Search</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://botw-compendium.herokuapp.com/api/v2" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="js/script.js"></script>
+
+  <h1>Welcome to the Hyrule Compendium!</h1>
+
+  <div id="filters">
+    <input type="text" class="myInput" name="itemSearch" placeholder="Search for names...">
+    <input type="text" class="myInput" name="locationSearch" placeholder="Search for locations...">
+
+    <div id="categories">
+      <p>Search by Category:</p>
+      <p><input type="radio" name="category" id="food" value="creatures" /> Creatures</p>
+      <p><input type="radio" name="category" id="equipment" value="equipment" /> Equipment</p>
+      <p><input type="radio" name="category" id="materials" value="materials" /> Materials</p>
+      <p><input type="radio" name="category" id="monsters" value="monsters" /> Monsters</p>
+      <p><input type="radio" name="category" id="treasure" value="treasure" /> Treasures</p>
+    </div>
+    <p><button id="resetbutton" type="button">Reset</button></p>
+  </div>
+  <a class="documentation" href = "https://docs.google.com/document/d/1edNlU3bc4Z0P2Sqc1ogdsI34tV9FhfW7ujqz4ozdaO8/edit"><h4>Documentation can be found here</h4></a>
+
+
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:20%;">Name</th>
+      <th style="width:10%;">Image</th>
+      <th style="width:10%;">Category</th>
+      <th style="width:30%;">Common Locations</th>
+      <th style="width:10%;">Drops</th>
+    </tr>
+  </table>
+</body>
+
+</html>
